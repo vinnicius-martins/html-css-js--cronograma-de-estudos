@@ -1,0 +1,100 @@
+:root{
+    --cor_principal: rgba(132, 176, 233, 0.829);
+    --cor_nav: rgba(121, 162, 216, 0.829);
+    --cor_fonte_nav: white;
+    --cor_box_hover: white;
+    --cor_fonte_main: rgb(64, 123, 199);
+    --cor-container: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    list-style: none;
+    color: var(--cor_fonte_nav);
+    font-size: 18px;
+}
+
+body{
+    background-color: var(--cor_principal);
+}
+
+header{
+    height: 118px;
+    background-color: var(--cor_nav);
+    display: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 6px double white;
+    box-shadow: -20px -50px 150px 200px white;
+}
+
+header .titulo{
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#logo{
+    padding-top: 5px;
+    height: 40px;
+    margin-right: 10px;
+    overflow: hidden
+}
+
+header .materias{
+    display: flex;
+    justify-content: center;
+}
+
+header .materias a{
+    display: inline-block;
+    line-height: 68px;
+    padding: 0px 15px;
+    cursor: pointer; 
+}
+
+header .materias a:hover{
+    transition: .6s;
+    background-color: white;
+    color: var(--cor_nav);
+    
+}
+
+main{
+    display: flex;
+    margin-top: 50px;
+}
+
+main .horarios{
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+    border-radius: 4px;
+    background-color: var(--cor-container);
+    border: 2px solid var(--cor_fonte_main);
+}
+
+main div ul li{
+    text-align: justify;
+    color: var(--cor_fonte_main);
+    border: 1px solid var(--cor_nav);
+    padding: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(64, 123, 199);
+}
+
+
+
+
+
+
